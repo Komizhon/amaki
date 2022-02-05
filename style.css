@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 150%;
+    left: -30%;
+    top: -10%;
+    height: 120%;
+    object-fit: cover;
+    object-position: 0 0;
+    z-index: -3;
+
+
+}
+
+.stars {
+    position: absolute;
+    width: 270px;
+    object-position: 0 0;
+    object-fit: cover;
+
+}
+
+.star_1 {
+
+    left: 20%;
+    top: 20%;
+}
+
+.star_2 {
+
+    right: 20%;
+    top: 0%;
+}
+
+.star_3 {
+    right: 5%;
+    top: 20%;
+}
+
+.star_4 {
+    left: 5%;
+    top: 10%;
+}
+
+.stars {
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-200px);
+    }
+}
